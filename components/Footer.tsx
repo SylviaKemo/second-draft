@@ -20,10 +20,6 @@ export function Footer() {
           <a href={`mailto:${site.email}`} className="text-cream hover:text-lime">
             {site.email}
           </a>{" "}
-          ·{" "}
-          <a href="/privacy" className="text-cream hover:text-lime">
-            Privacy notice
-          </a>{" "}
           · © 2026
         </p>
       </div>
