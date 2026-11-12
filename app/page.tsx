@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Pricing } from "@/components/Pricing";
 import { Problems } from "@/components/Problems";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { ToolsStrip } from "@/components/ToolsStrip";
 import { WhyUs } from "@/components/WhyUs";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <BookCta />
       </main>
       <Footer />
+      <ScrollReveal />
     </>
   );
 }

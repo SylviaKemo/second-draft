@@ -1,3 +1,4 @@
+import { reveal } from "@/lib/reveal";
 import { ButtonLink } from "./Button";
 
 type Plan = {
@@ -42,7 +43,7 @@ const plans: Plan[] = [
 export function Pricing() {
   return (
     <section id="pricing" className="container-page flex scroll-mt-4 flex-col gap-12 py-20 sm:py-28">
-      <div className="flex max-w-[720px] flex-col gap-4">
+      <div {...reveal()} className="flex max-w-[720px] flex-col gap-4">
         <h2 className="heading-section">Fixed prices. No surprises.</h2>
         <p className="text-lg leading-7 text-muted">
           Founding-client prices for our first three clients, in exchange for a testimonial and a
@@ -50,9 +51,10 @@ export function Pricing() {
         </p>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(290px,100%),1fr))] items-stretch gap-6">
-        {plans.map((p) => (
+        {plans.map((p, i) => (
           <article
             key={p.name}
+            {...reveal(i, 120)}
             className={`flex flex-col gap-[18px] rounded-[22px] border-2 border-ink p-8 ${
               p.featured ? "bg-lime shadow-ink" : "bg-white"
             }`}

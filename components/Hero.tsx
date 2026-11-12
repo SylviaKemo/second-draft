@@ -15,22 +15,22 @@ export function Hero() {
       className="container-page flex flex-wrap items-center gap-14 pt-12 pb-24 sm:pt-[72px]"
     >
       <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-7">
-        <p className="origin-left -rotate-2 font-hand text-[28px] leading-none text-rust">
+        <p className="animate-rise origin-left -rotate-2 font-hand text-[28px] leading-none text-rust">
           for apps built with AI ↓
         </p>
-        <h1 className="font-display text-[clamp(44px,6.6vw,92px)] leading-[0.98] font-extrabold tracking-[-0.04em]">
+        <h1 className="animate-rise [--delay:80ms] font-display text-[clamp(44px,6.6vw,92px)] leading-[0.98] font-extrabold tracking-[-0.04em]">
           Lovable wrote your{" "}
           <span className="whitespace-nowrap text-muted line-through decoration-coral decoration-[6px]">
             first
           </span>{" "}
           draft. We write the one that <span className="rounded-lg bg-lime px-2.5">ships.</span>
         </h1>
-        <p className="max-w-[560px] text-[19px] leading-[1.55]">
+        <p className="animate-rise [--delay:180ms] max-w-[560px] text-[19px] leading-[1.55]">
           Your Lovable, Bolt, Replit or Cursor app works in the demo, then wobbles with real
           users. We fix the security holes, messy code and fragile deployments so you can launch
           for real.
         </p>
-        <div className="flex flex-wrap items-center gap-3.5">
+        <div className="animate-rise [--delay:260ms] flex flex-wrap items-center gap-3.5">
           <ButtonLink href="#book" size="lg">
             Book a free 20-min call
           </ButtonLink>
@@ -38,7 +38,7 @@ export function Hero() {
             See prices
           </ButtonLink>
         </div>
-        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-muted">
+        <ul className="animate-rise [--delay:340ms] flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-muted">
           <li>✓ Fixed prices</li>
           <li>✓ You own the code</li>
           <li>✓ Audit in 5 working days</li>
@@ -47,7 +47,7 @@ export function Hero() {
 
       <figure
         aria-label="Example of a fix we'd make, shown as a code change"
-        className="relative m-0 mb-10 w-full max-w-[500px] min-w-0 flex-[1_1_300px] sm:flex-[1_1_400px]"
+        className="animate-rise [--delay:300ms] relative m-0 mb-10 w-full max-w-[500px] min-w-0 flex-[1_1_300px] sm:flex-[1_1_400px]"
       >
         <div className="rotate-[1.5deg] overflow-hidden rounded-[18px] bg-ink text-cream shadow-lime">
           <div className="flex items-center justify-between border-b border-code-line px-5 py-3.5 font-mono text-[13px]">

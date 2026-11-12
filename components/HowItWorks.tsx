@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { reveal } from "@/lib/reveal";
 
 const steps: { title: ReactNode; text: string }[] = [
   {
@@ -27,7 +28,7 @@ export function HowItWorks() {
   return (
     <section id="how" className="scroll-mt-4 border-y-2 border-ink bg-white">
       <div className="mx-auto flex max-w-[1240px] flex-col gap-14 px-4 py-20 sm:px-8 sm:py-28">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div {...reveal()} className="flex flex-wrap items-end justify-between gap-6">
           <h2 className="heading-section">How it works</h2>
           <span className="-rotate-2 font-hand text-[26px] text-rust">
             like editing, but for code
@@ -35,7 +36,7 @@ export function HowItWorks() {
         </div>
         <ol className="grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-7">
           {steps.map((s, i) => (
-            <li key={i} className="flex flex-col gap-3.5">
+            <li key={i} {...reveal(i, 110)} className="flex flex-col gap-3.5">
               <span className="font-display text-[64px] leading-none font-extrabold">{i + 1}</span>
               <h3 className="font-display text-[26px] leading-[30px] font-extrabold">{s.title}</h3>
               <p className="text-base leading-[26px] text-muted">{s.text}</p>

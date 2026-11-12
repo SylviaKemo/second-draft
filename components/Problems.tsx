@@ -1,3 +1,5 @@
+import { reveal } from "@/lib/reveal";
+
 const problems = [
   {
     quote: "“it worked yesterday”",
@@ -25,11 +27,14 @@ const problems = [
 export function Problems() {
   return (
     <section className="container-page flex flex-col gap-12 py-20 sm:py-28">
-      <h2 className="heading-section max-w-[760px]">Sound familiar?</h2>
+      <h2 {...reveal()} className="heading-section max-w-[760px]">
+        Sound familiar?
+      </h2>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
-        {problems.map((p) => (
+        {problems.map((p, i) => (
           <div
             key={p.quote}
+            {...reveal(i)}
             className={`flex flex-col gap-3.5 rounded-[18px] border-2 border-ink p-7 ${p.rotate} ${
               p.highlight ? "bg-lime" : "bg-white"
             }`}
@@ -41,7 +46,7 @@ export function Problems() {
           </div>
         ))}
       </div>
-      <p className="max-w-[680px] text-xl leading-normal">
+      <p {...reveal()} className="max-w-[680px] text-xl leading-normal">
         That&apos;s normal. AI tools are brilliant at first drafts. Getting to something real
         users can rely on takes an engineer&apos;s{" "}
         <span className="bg-lime px-1">second pass</span>. That&apos;s us.

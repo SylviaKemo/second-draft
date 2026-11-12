@@ -1,3 +1,5 @@
+import { reveal } from "@/lib/reveal";
+
 const faqs = [
   {
     q: "Do you rewrite everything?",
@@ -25,8 +27,13 @@ export function Faq() {
   return (
     <section id="faq" className="scroll-mt-4 border-t-2 border-ink bg-white">
       <div className="mx-auto flex max-w-[1240px] flex-wrap gap-14 px-4 py-20 sm:px-8 sm:py-28">
-        <h2 className="heading-section flex-[1_1_280px]">Questions</h2>
-        <div className="flex min-w-0 flex-[2_1_560px] flex-col border-b-2 border-ink">
+        <h2 {...reveal()} className="heading-section flex-[1_1_280px]">
+          Questions
+        </h2>
+        <div
+          {...reveal(1, 120)}
+          className="flex min-w-0 flex-[2_1_560px] flex-col border-b-2 border-ink"
+        >
           {faqs.map((f) => (
             <details key={f.q} className="group border-t-2 border-ink py-[22px]">
               <summary className="flex justify-between gap-4 font-display text-[22px] leading-7 font-extrabold">

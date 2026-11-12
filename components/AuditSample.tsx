@@ -1,3 +1,5 @@
+import { reveal } from "@/lib/reveal";
+
 type Severity = "critical" | "high" | "medium";
 
 const badge: Record<Severity, string> = {
@@ -17,7 +19,7 @@ export function AuditSample() {
   return (
     <section className="bg-ink text-cream">
       <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-14 px-4 py-20 sm:px-8 sm:py-28">
-        <div className="flex min-w-0 flex-[1_1_420px] flex-col gap-5">
+        <div {...reveal()} className="flex min-w-0 flex-[1_1_420px] flex-col gap-5">
           <h2 className="font-display text-[clamp(40px,5vw,60px)] leading-none font-extrabold tracking-[-0.035em]">
             What an audit <span className="text-lime">looks like</span>
           </h2>
@@ -32,6 +34,7 @@ export function AuditSample() {
         <div
           role="img"
           aria-label="Sample audit report showing ranked findings"
+          {...reveal(1, 120)}
           className="flex min-w-0 flex-[1_1_460px] flex-col gap-3 rounded-[18px] bg-cream p-5 text-ink sm:p-7"
         >
           <div className="flex justify-between gap-3 font-mono text-[13px] text-muted">
@@ -41,6 +44,7 @@ export function AuditSample() {
           {findings.map((f, i) => (
             <div
               key={i}
+              {...reveal(i + 2, 120)}
               className={`flex items-center gap-3 rounded-xl border-2 p-3.5 ${
                 f.severity === "medium" ? "border-dashed border-muted" : "border-ink"
               }`}
