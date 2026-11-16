@@ -2,5 +2,5 @@
 export const site = {
   bookingUrl: "https://cal.com/secondarydraft/20min",
   velltechUrl: "https://[velltech-domain]",
-  email: "hello@[domain]",
+  email: "hello@seconddraft.tech",
 };
