@@ -17,7 +17,7 @@ export function Footer() {
           {site.velltechUrl ? (
             <a
               href={site.velltechUrl}
-              className="inline-flex items-center gap-2 text-sm text-cream no-underline hover:text-lime"
+              className="inline-flex min-h-11 items-center gap-2 text-sm text-cream no-underline hover:text-lime"
             >
               {velltechCredit}
             </a>
@@ -25,12 +25,15 @@ export function Footer() {
             <span className="inline-flex items-center gap-2 text-sm">{velltechCredit}</span>
           )}
         </div>
-        <p className="text-sm leading-[22px]">
-          VellTech Group Limited, trading as Second Draft ·{" "}
-          <a href={`mailto:${site.email}`} className="text-cream hover:text-lime">
+        <p className="flex flex-wrap items-center gap-x-1.5 text-sm leading-[22px]">
+          <span>VellTech Group Limited, trading as Second Draft ·</span>
+          <a
+            href={`mailto:${site.email}`}
+            className="inline-flex min-h-11 items-center text-cream hover:text-lime"
+          >
             {site.email}
-          </a>{" "}
-          · © 2026
+          </a>
+          <span>· © 2026</span>
         </p>
       </div>
     </footer>

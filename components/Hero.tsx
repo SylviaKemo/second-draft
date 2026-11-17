@@ -11,7 +11,6 @@ const diff = [
 export function Hero() {
   return (
     <section
-      id="top"
       className="container-page flex flex-wrap items-center gap-14 pt-12 pb-24 sm:pt-[72px]"
     >
       <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-7">
