@@ -1,7 +1,7 @@
 import { ButtonLink } from "./Button";
 
 const diff = [
-  { type: "del", text: '- const key = "sk_live_9f2…"' },
+  { type: "del", text: '- const key = "sk_live_XXXX"' },
   { type: "del", text: "- createClient(url, key)" },
   { type: "add", text: "+ const key = process.env.SERVICE_KEY" },
   { type: "add", text: "+ // server only, rotated, RLS on" },
