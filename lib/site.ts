@@ -4,6 +4,6 @@ export const site = {
   name: "Second Draft",
   bookingUrl: "https://cal.com/secondarydraft/20min",
   /** Set to VellTech's website to make the footer credit a link; empty shows plain text. */
-  velltechUrl: "",
+  velltechUrl: "https://www.velltechgroup.com",
   email: "hello@seconddraft.tech",
 };
