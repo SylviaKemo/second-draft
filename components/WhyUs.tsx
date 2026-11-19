@@ -6,8 +6,8 @@ const reasons = [
     text: "No pointless rewrite. Your app, your stack, just production-grade.",
   },
   {
-    title: "Senior engineers only",
-    text: "Production experience with AI products and web apps in Kenya, the UK, Sweden and the US.",
+    title: "Engineers who've shipped",
+    text: "Built by engineers who have shipped real apps in Kenya, the UK, Sweden and the US.",
   },
   {
     title: "Fixed scope, fixed price",
