@@ -7,7 +7,9 @@ import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Pricing } from "@/components/Pricing";
 import { Problems } from "@/components/Problems";
+import { KnowTheCost } from "@/components/KnowTheCost";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { WhoWeWorkWith } from "@/components/WhoWeWorkWith";
 import { ToolsStrip } from "@/components/ToolsStrip";
 import { WhyUs } from "@/components/WhyUs";
 
@@ -19,7 +21,9 @@ export default function Home() {
         <Hero />
         <ToolsStrip />
         <Problems />
+        <WhoWeWorkWith />
         <HowItWorks />
+        <KnowTheCost />
         <Pricing />
         <AuditSample />
         <WhyUs />
